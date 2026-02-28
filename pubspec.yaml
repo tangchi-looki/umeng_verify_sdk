@@ -1,0 +1,25 @@
+name: umeng_verify_sdk
+description: u-verify sdk plugin.
+version: 2.0.0
+homepage: https://www.umeng.com
+
+environment:
+  sdk: '>=2.12.0 <4.0.0'
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.umeng.umeng_verify_sdk
+        pluginClass: UmengVerifySdkPlugin
+      ios:
+        pluginClass: UmengVerifySdkPlugin
